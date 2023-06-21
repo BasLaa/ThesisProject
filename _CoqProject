@@ -1,0 +1,12 @@
+-Q theories Thesis
+
+-arg -w -arg -notation-overridden
+
+theories/BoolSet.v
+theories/Definitions.v
+theories/Composition.v
+theories/Prefix.v
+theories/IO.v
+theories/IOComposition.v
+theories/InputEnabling.v
+theories/Example.v

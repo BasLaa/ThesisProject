@@ -1,0 +1,17 @@
+// Temporal files
+\#*#
+*~
+*.tmp
+*.sw*
+.DS_STORE
+
+
+// Coq Files
+CoqMakefile.conf
+*.vo
+*.glob
+*.aux
+*.d
+Makefile.coq
+Makefile.coq.conf
+.lia.cache
