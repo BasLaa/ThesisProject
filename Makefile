@@ -10,7 +10,4 @@ Makefile.coq: _CoqProject
 
 force _CoqProject Makefile: ;
 
-%: Makefile.coq force/Users/basla/Course Files/Thesis/final-software
-	@+$(MAKE) -f Makefile.coq $@
-
 .PHONY: all clean force
