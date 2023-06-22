@@ -12,8 +12,8 @@ $ make
 All Coq files, contained in the folder `theories`, are now compiled and can be run through.
 
 Note that if you are using CoqIDE or Proof General to run through the theories,
-you might find that they IDE complains that the files were compiled with a different version of Coq.
-If this happens, you can either fix the version of the IDE to match your coqc compiler or compile inside the IDE:
+you might find that the IDE complains that the files were compiled with a different version of Coq.
+If this happens, you can either fix the Coq version of the IDE to match your coqc compiler or compile inside CoqIDE as follows:
 
 - run `make clean` in the terminal to remove the previous compilation if necessary
 - Open the first file `BoolSet.v` in CoqIDE and run `make` from within CoqIDE: `Compile` -> `make`
