@@ -9,7 +9,7 @@ $ git clone https://github.com/BasLaa/ThesisProject.git
 $ cd ThesisProject
 $ make
 ```
-All files are now compiled and can be run through.
+All Coq files, contained in the folder `theories`, are now compiled and can be run through.
 
 ## Files
 - `BoolSet.v` defines sets on boolean functions
