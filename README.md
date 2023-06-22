@@ -15,9 +15,9 @@ Note that if you are using CoqIDE or Proof General to run through the theories,
 you might find that they IDE complains that the files were compiled with a different version of Coq.
 If this happens, you can either fix the version of the IDE to match your coqc compiler or compile inside the IDE:
 
-- run `make clean` to remove the previous compilation if necessary
+- run `make clean` in the terminal to remove the previous compilation if necessary
 - Open the first file `BoolSet.v` in CoqIDE and run `make` from within CoqIDE: `Compile` -> `make`
-- If this doesn't work, it's because CoqIDE is running `make` inside the `theories` folder:
+- If this doesn't work, it's because CoqIDE is running `make` inside the `theories` folder instead of the parent directory:
 - Fix this by going to `Edit` -> `Preferences` -> `Externals`. Change the `make` command to something like `cd ..; make` or anything that sequences `cd ..` with the command `make` on your OS. Try running `make` inside CoqIDE once again.
 
 ## Files
