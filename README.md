@@ -17,8 +17,10 @@ If this happens, you can either fix the version of the IDE to match your coqc co
 
 - run `make clean` in the terminal to remove the previous compilation if necessary
 - Open the first file `BoolSet.v` in CoqIDE and run `make` from within CoqIDE: `Compile` -> `make`
-- If this doesn't work, it's because CoqIDE is running `make` inside the `theories` folder instead of the parent directory:
-- Fix this by going to `Edit` -> `Preferences` -> `Externals`. Change the `make` command to something like `cd ..; make` or anything that sequences `cd ..` with the command `make` on your OS. Try running `make` inside CoqIDE once again.
+- If this doesn't work, it's because CoqIDE is running `make` inside the `theories` folder instead of the parent directory; there are two options to fix this:
+
+1. Fix this by going to `Edit` -> `Preferences` -> `Externals`. Change the `make` command to something like `cd ..; make` or anything that sequences `cd ..` with the command `make` on your OS. Try running `make` inside CoqIDE once again.
+2. Fix this by instead opening a file located in the parent directory in CoqIDE: Open File -> Change the setting in bottom right from 'Coq source code' to 'all'. Then open README.md. Now go to `Compile` -> `make` to run the command from the current directoey.
 
 ## Files
 - `BoolSet.v` defines sets on boolean functions
